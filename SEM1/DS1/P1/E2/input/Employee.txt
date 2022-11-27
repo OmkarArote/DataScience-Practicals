@@ -1,0 +1,6 @@
+Empid EmpName Designation Salary
+1 Omkar CEO 1000000
+2 Abhi Manager 100000
+3 Shuvo Manager 100000
+4 Hemant Developer 100000
+5 Tushar Tester 100000
