@@ -1,0 +1,11 @@
+fun=function(df,marks){
+  a=length(row.names(df))
+  b=length(marks)
+  if(a==b){
+    df=cbind(df,marks)
+  }
+}
+vector1=c(67,23,78,23,89,45,67,12,67,45)
+studentDATA=data.frame(RollNo=c(01,02,03,04,05,06,07,08,09,10),lastname=c("ades","hsgf","shjug","dfasf","dsf","rty","fgh","dgh","rgst","gr"))
+a=fun(studentDATA,vector1)
+a
