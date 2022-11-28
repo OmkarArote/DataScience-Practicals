@@ -1,0 +1,10 @@
+df=read.csv("./Data/ToyottaCorolla.csv")
+View(df)
+dim(df)
+names(df)
+head(df)
+df[1:3,2:7]
+df[1:10,]
+df[5,6]
+df[5,c(1:2,4,8:10)]
+df$FuelType[1:20]

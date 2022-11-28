@@ -1,0 +1,5 @@
+df_as = read.csv("Data/ApplianceShipments.csv")
+summary(df_as)
+shipment.ts = ts(df_as$Shipments, start = c(1985, 1), end = c(1989, 4), frequency = 4)
+plot(shipment.ts, xlab = "Year", ylab = "Shipment(In Millions)", col="red", type="b", lwd = 2.5)
+text(x = shipment.ts, labels = shipment.ts, pos = 4, cex = 1)
