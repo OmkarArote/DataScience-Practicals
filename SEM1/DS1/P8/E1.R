@@ -1,0 +1,10 @@
+library(ggplot2)
+library(ggpubr)
+income.data=read.csv("Data/income.data.csv")
+incomelm=lm(formula = happiness~income,income.data)
+summary(incomelm)
+income.graph=ggplot(income.data,aes(x=income,y=happiness ))+geom_point()
+income.graph
+income.graph=income.graph+geom_smooth(method = lm,col="black")
+income.graph=income.graph+stat_regline_equation(label.x = 3,label.y = 4)
+income.graph+theme_bw()+labs(title="reported happiness as a function of income",x="income(x$10,000)", y="happiness score (0 to 10)")
